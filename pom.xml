@@ -225,4 +225,13 @@
       </plugin>
     </plugins>
   </build>
+      <profiles>
+    <profile>
+      <id>native</id>
+      <properties>
+        <test>!LoggingAppenderTest</test>
+        <!-- <test>com.google.cloud.datastore.it.ITDatastoreConceptsTest</test> -->
+      </properties>
+    </profile>
+  </profiles>
 </project>
